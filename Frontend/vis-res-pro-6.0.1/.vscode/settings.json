@@ -1,0 +1,10 @@
+{
+  // "files.autoSave": "afterDelay"
+
+  "editor.formatOnSave": false,
+  "[javascript]": {
+      "editor.formatOnSave": true
+  },
+  "editor.formatOnSaveTimeout": 1,
+  "prettier.singleQuote": true
+}

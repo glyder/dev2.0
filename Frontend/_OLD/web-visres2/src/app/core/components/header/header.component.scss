@@ -1,0 +1,51 @@
+.example-icon {
+  padding: 0 14px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.demo-toolbar {
+  padding: 6px;
+  .demo-toolbar-icon {
+      padding: 0 14px;
+  }
+  .demo-fill-remaining {
+      flex: 1 1 auto;
+  }
+  button {
+      margin: 0 4px;
+  }
+}
+
+h4 {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.btn-floating {
+  padding: 5px 10px;
+  background: #fff;
+  margin: 10px 3px;
+}
+
+// .dropdown-toggle::after {
+//   display:none
+// }
+
+//Before scrolling
+.navbar-fixed-top {
+  background-color: #cfa
+  }
+  //After scrolling
+  .top-nav-collapse {
+  background-color: #dea
+  }
+
+  // @import "vrs-branding";
+  // @import "ventia-branding";
+
+  // h1 {
+  //   color: $brand-color;
+  // }

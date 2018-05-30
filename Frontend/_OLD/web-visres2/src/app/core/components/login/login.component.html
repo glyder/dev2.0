@@ -1,0 +1,65 @@
+<div class="container">
+  <div class="row">
+
+    <div class="card mt-2">
+
+      <div class="card-header text-center">
+        Login
+      </div>
+
+      <div class="card-body">
+        <h4 class="card-title">Sign in</h4>
+
+        <!-- Errors -->
+        <p class="card-text">
+            <app-list-errors [errors]="errors"></app-list-errors>
+        </p>
+
+        <p *ngIf="!errors">
+          vrs object ==> {{ errors}}
+        </p>
+
+        <form [formGroup]="authForm"
+              (ngSubmit)="submitForm()">
+
+
+          <!-- Input - Email -->
+          <div class="md-form">
+            <i class="fa fa-envelope prefix grey-text"></i>
+            <input type="text"
+                    id="login-email"
+                    class="form-control"
+                    formControlName="email"
+                    mdbActive mdbInputDirective>
+            <label for="login-email">Email</label>
+          </div>
+
+          <!-- Input Password -->
+          <div class="md-form">
+            <i class="fa fa-lock prefix grey-text"></i>
+            <input type="password"
+                    id="login-pass"
+                    class="form-control"
+                    formControlName="password"
+                    mdbCharCounter mdbActive mdbInputDirective>
+            <label for="login-pass">Password</label>
+          </div>
+
+          <!-- Input - button -->
+          <div class="text-center">
+            <button class="btn btn-default waves-light bk-color"
+                    mat-raised-button mdbRippleRadius
+                    [disabled]="!authForm.valid"
+                    type="submit">
+              Login
+            </button>
+          </div>
+
+        </form>
+
+      </div> <!-- card-body -->
+    </div> <!-- card-->
+  </div> <!-- row -->
+</div> <!-- container-->
+
+<!-- *************************************************************************** -->

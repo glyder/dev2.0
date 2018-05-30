@@ -1,0 +1,66 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+/* Angular Material theme
+   =======================
+    deeppurple-amber.css
+    indigo-pink.css
+    pink-bluegrey.css
+    purple-green.css
+*/
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+//-----------------------------------------------
+$color-main: #59E8B3;
+
+$color-nice: #5CB85C;
+$color-cloud: #33cc99;
+//-----------------------------------------------
+$color-mac-and-cheese: #E8E759;
+$color-royal-blue: #4444E4;
+$color-turquoise-blue: #59E8B3;
+$color-deep-blush: #E17582;
+//-----------------------------------------------
+// MDB
+.card-header {
+    color: white;
+    text-align: center;
+    align-content: center;
+    background-color: $color-main;
+}
+
+//-----------------------------------------------
+// Material Design
+// $primary: $color-main; //@indigo;
+// $success: teal;
+// $info: #CFD8DC;
+// $warning:#455A64;
+// .material-icons {
+//     vertical-align: middle;
+// }
+// .material-icons.md-14 {
+//     font-size: 14px;
+// }
+// .material-icons.md-18 {
+//     font-size: 18px;
+// }
+// .material-icons.md-24 {
+//     font-size: 24px;
+// }
+// .material-icons.md-36 {
+//     font-size: 36px;
+// }
+// .material-icons.md-48 {
+//     font-size: 48px;
+// }
+//-----------------------------------------------
+// Other
+.bk-color {
+    background-color: $color-main;
+}
+
+//-----------------------------------------------
+$mat-theme-primary: #9c27b0;
+$mat-theme-secondary: #76ff03;
+$mat-theme-background: #fff;
+//=================================================================

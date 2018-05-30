@@ -1,0 +1,29 @@
+<p>
+    ngrx works!
+</p>
+
+<div>Message: {{ message$ | async }}</div>
+
+<button (click)="spanishMessage()" class="btn btn-default waves-light  light-blue accent-3 aqua-gradient " mdbRippleRadius>Spanish</button>
+<button (click)="frenchMessage()" class="btn btn-default waves-light  light-blue accent-3 aqua-gradient" mdbRippleRadius>French</button>
+<button (click)="aussieMessage()" class="btn btn-default waves-light  light-blue accent-3 aqua-gradient" mdbRippleRadius>Aussie</button>
+
+<hr>
+
+
+<div *ngIf="post$ | async as p">
+
+    <h2>{{ p.text }}</h2>
+    <h4>Votes: {{ p.likes }} </h4>
+
+    <button (click)="upvote()" class="btn btn-default waves-light  light-blue accent-3 aqua-gradient">Upvote </button>
+    <button (click)="downvote()" class="btn btn-default waves-light  light-blue accent-3 aqua-gradient">Downvote </button>
+    <button (click)="resetPost()" class="btn btn-default waves-light  light-blue accent-3 aqua-gradient">Reset </button>
+
+    <input [(ngModel)]="text" />
+    <button (click)="editText()" class="btn btn-default waves-light  light-blue accent-3 aqua-gradient">Change Title </button>
+
+</div>
+
+
+<hr>

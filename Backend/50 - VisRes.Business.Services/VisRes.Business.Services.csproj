@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="2.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="CoreClientLibrary">
+      <HintPath>..\0 - DLLs\UAMDll\CoreClientLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.WebUtilities">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.aspnetcore.webutilities\2.0.2\lib\netstandard2.0\Microsoft.AspNetCore.WebUtilities.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Infrastructure\" />
+    <Folder Include="_FAKES\Dashboard\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\10 - VisRes.Models\VisRes.Models.csproj" />
+    <ProjectReference Include="..\30 - VisRes.Data.EFCore\VisRes.Data.EFCore.csproj" />
+    <ProjectReference Include="..\40 - VisRes.Data.Repositories\VisRes.Data.Repositories.csproj" />
+  </ItemGroup>
+
+</Project>

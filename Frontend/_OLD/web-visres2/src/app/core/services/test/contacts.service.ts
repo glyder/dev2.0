@@ -1,0 +1,42 @@
+import { Injectable } from '@angular/core';
+
+import {HttpClient} from '@angular/common/http';
+import {Http} from '@angular/http';
+import {Observable} from 'rxjs/Observable';
+import {map} from 'rxjs/operators';
+
+import {environment} from '../../../../environments/environment';
+import { Contact } from './../../../models/Contact';
+
+@Injectable()
+export class ContactsService {
+
+  constructor(private http: HttpClient ) { }
+
+
+  index(): Observable<Contact[]> {
+    return this.http
+        .get<Contact[]>(`${environment.appApi.baseUrl}/contacts`);
+
+  }
+
+  show(contactId: number): Observable<Contact> {
+    return this.http
+        .get<Contact>(`${environment.appApi.baseUrl}/contacts/${contactId}`);
+
+  }
+
+  create(contact: Contact): Observable<Contact> {
+    return this.http.post<Contact>(`${environment.appApi.baseUrl}/contacts`, contact);
+  }
+
+  update(contact: Contact): Observable<Contact> {
+    return this.http.patch<Contact>(`${environment.appApi.baseUrl}/contacts/${contact.id}`, contact);
+  }
+
+
+  destroy(id: number): Observable<Contact> {
+    return this.http.delete<Contact>(`${environment.appApi.baseUrl}/contacts/${id}`);
+  }
+
+}

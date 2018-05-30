@@ -1,0 +1,57 @@
+﻿
+
+https://docs.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger
+	https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-nswag?tabs=visual-studio%2Cvisual-studio-xml
+	https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?tabs=visual-studio%2Cvisual-studio-xml
+
+
+Swagger / Swashbuckle.AspNetCore
+	https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-nswag?tabs=visual-studio%2Cvisual-studio-xml
+		Install-Package NSwag.AspNetCore
+	https://github.com/domaindrivendev/Swashbuckle.AspNetCore
+		Install-Package Swashbuckle.AspNetCore
+
+
+View Working APIs at:
+	http://localhost:65464/swagger/
+	http://localhost:65464/swagger/v1/swagger.json
+
+Video
+=======
+https://channel9.msdn.com/Blogs/Seth-Juarez/ASPNET-Core-Authorization-with-Barry-Dorrans
+
+
+TODO:
+====
+	Routes
+	https://stackoverflow.com/questions/12775590/routing-with-multiple-get-methods-in-asp-net-web-api
+	https://weblogs.asp.net/dwahlin/new-features-in-asp-net-web-api-2-part-i
+	https://stormpath.com/blog/routing-in-asp-net-core
+
+	Migrate
+	https://docs.microsoft.com/en-us/aspnet/core/migration/configuration
+	https://docs.microsoft.com/en-us/aspnet/core/migration/identity
+	https://docs.microsoft.com/en-us/aspnet/core/migration/webapi
+	https://docs.microsoft.com/en-us/aspnet/core/migration/http-modules
+	https://docs.microsoft.com/en-us/aspnet/core/migration/proper-to-2x/
+	https://docs.microsoft.com/en-us/aspnet/web-api/overview/web-api-routing-and-actions/routing-and-action-selection
+
+	https://docs.microsoft.com/en-us/aspnet/web-api/overview/web-api-routing-and-actions/attribute-routing-in-web-api-2
+	https://docs.microsoft.com/en-us/aspnet/web-api/overview/web-api-routing-and-actions/create-a-rest-api-with-attribute-routing
+
+
+	MSDN Doco
+	https://www.asp.net/web-api/overview/web-api-routing-and-actions/attribute-routing-in-web-api-2?__hstc=250130137.d519671a34e3a56a4c773f89949c75cd.1488067200081.1488067200082.1488067200083.1&__hssc=250130137.1.1488067200084&__hsfp=528229161
+
+
+
+
+	Swagger extend
+		https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?tabs=visual-studio%2Cvisual-studio-xml#customize--extend
+	Multiple Versions
+		http://www.talkingdotnet.com/support-multiple-versions-of-asp-net-core-web-api/
+		Partly implemented. 
+		Not working correctly in Swagger UI will retry another time.
+
+
+

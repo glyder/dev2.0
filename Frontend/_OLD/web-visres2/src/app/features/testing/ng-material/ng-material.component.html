@@ -1,0 +1,43 @@
+<p>
+    ng-material works!
+</p>
+
+<!--The content below is only a placeholder and can be replaced.-->
+<mat-card>
+    <mat-form-field>
+        <input matInput [(ngModel)]="answer" placeholder="Who's the man?">
+    </mat-form-field>
+
+    <br>
+
+    <button mat-raised-button (click)="showAnswer()">Show answer</button>
+    <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
+</mat-card>
+
+
+<mat-card *ngIf="answerDisplay">
+    <span class="done" style="font-size:2em">
+    {{ answerDisplay }}, you're damn right.
+    <button mat-fab>
+      <mat-icon>check circle</mat-icon>
+    </button>
+  </span>
+</mat-card>
+
+<!-- <button mat-button>My Button</button> -->
+
+<!-- <mat-card>
+    <form [formGroup]="form" (ngSubmit)="login()">
+
+        <mat-input-container>
+            <input matInput type="email" placeholder="Email" formControlName="email" />
+        </mat-input-container>
+
+        <mat-input-container>
+            <input matInput type="password" placeholder="Password" formControlName="password" />
+        </mat-input-container>
+
+        <button mat-raised-button type="submit" color="primary">Login</button>
+
+    </form>
+</mat-card> -->

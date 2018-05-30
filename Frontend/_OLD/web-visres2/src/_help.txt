@@ -1,0 +1,370 @@
+// http://jasonwatmore.com/post/2017/04/19/angular-2-4-router-animation-tutorial-example
+
+
+
+
+
+
+https://www.academind.com/learn/javascript/callbacks-vs-promises-vs-rxjs-vs-async-awaits/
+https://www.npmjs.com/package/ngx-reduxor
+
+https://www.youtube.com/watch?v=5NWClfa8PUQ&t=7s
+http://angular-redux.surge.sh/
+https://stackblitz.com/github/seeschweiler/angular-redux
+
+https://www.youtube.com/watch?v=GjcHAXNwPYM   ***** checkout (classes)
+  https://www.youtube.com/watch?v=49QM3KkOKXs&t=12s   *componetns data sync with observable & behavior subjects
+https://www.youtube.com/watch?v=8Wy1AqY5gqE
+
+
+https://www.npmjs.com/package/json-server
+https://github.com/angular/in-memory-web-api/blob/master/README.md
+
+https://github/johnpapa/angular-ngrx-data
+https://stackblitz.com/github/johnpapa/angular-ngrx-data        ** in memory data service
+
+
+https://medium.com/spektrakel-blog/angular-testing-snippets-httpclient-d1dc2f035eb8
+https://medium.com/@paynoattn/creating-mock-data-for-jasmine-spec-and-protractor-e2e-tests-in-typescript-angular2-cf514c7ddb06
+
+http://jasonwatmore.com/post/2016/11/24/angular-2-mockbackend-example-for-backendless-development
+http://jasonwatmore.com/post/2017/12/15/angular-5-mock-backend-example-for-backendless-development
+http://jasonwatmore.com/post/2016/09/29/angular-2-user-registration-and-login-example-tutorial     ******
+
+https://angular.io/guide/testing
+https://angular.io/guide/http
+
+
+http://netmedia.io/blog/angular-architecture-patterns-high-level-project-architecture_5589
+http://netmedia.io/uncategorized/angular-architecture-patterns-detailed-project-architecture_5619
+http://netmedia.io/blog/angular-architecture-patterns-additional-application-features_5670
+https://github.com/netmedia/angular-architecture-patterns
+https://stackblitz.com/github.com/netmedia/angular-architecture-patterns
+
+
+https://medium.com/@motcowley/angular-folder-structure-d1809be95542
+https://stackoverflow.com/questions/42779871/angular-core-feature-shared-modules-what-goes-where
+
+https://www.technouz.com/4644/angular-5-app-structure-multiple-modules/
+https://stackblitz.com/github/zuperm4n/angular5-starter-multi-module?file=src%2Fapp%2Fcore%2Fservices%2Fauth-guard.service.ts
+
+https://thinkster.io/tutorials/building-real-world-angular-2-apps/page-layout-and-routing
+
+https://codecraft.tv/courses/angular/http/core-http-api/
+  http://httpbin.org
+https://codecraft.tv/courses/angular/routing/router-guards/
+
+
+https://stackoverflow.com/questions/45091973/angular4-module-based-services-vs-global-service
+https://medium.com/@dazcyril/resolving-data-in-angular-2-4-and-5-refactoring-components-and-moving-to-ngrx-store-15e15d8be3dd
+
+https://www.google.com.au/search?q=ngrx+vs+global+service&oq=ngrx+vs+global+service&aqs=chrome..69i57.4222j0j1&sourceid=chrome&ie=UTF-8
+https://medium.com/@m3po22/stop-using-ngrx-effects-for-that-a6ccfe186399
+https://blog.angular-university.io/angular-2-redux-ngrx-rxjs/
+
+https://coursetro.com/posts/code/132/Material-Design-Bootstrap-4-and-Angular-5-Tutorial---MdBootstrap
+https://mdbootstrap.com/support/how-to-change-primary-or-other-colors/
+https://medium.com/@tomastrajan/the-complete-guide-to-angular-material-themes-4d165a9d24d1
+https://theinfogrid.com/tech/developers/angular/material-icons-angular-5/
+https://www.coryetzkorn.com/blog/color-variables-in-sass/
+https://htmlcolorcodes.com/tutorials/scss-color-variables/
+
+https://www.sparkbit.pl/angular-2-route-guards-real-life-example/
+https://www.concretepage.com/angular-2/angular-2-4-route-guards-canactivate-and-canactivatechild-example
+
+
+
+jwt
+====
+https://stackoverflow.com/questions/27067251/where-to-store-jwt-in-browser-how-to-protect-against-csrf/27084126
+
+
+
+https://appdividend.com/2018/01/21/angular-5-crud-tutorial-example-scratch/
+https://dzone.com/articles/crud-operations-with-aspnet-core-using-angular-5-a
+
+Copying
+https://github.com/tomastrajan/angular-ngrx-material-starter/tree/8e8fc492fa65a5bcc0b7e038b408b97f51b48aec
+  https://github.com/marcellobarile/angular-5-ngrx-material-2-boilerplate
+
+https://dzone.com/articles/crud-operation-with-angular-5-http-client-and-aspn
+https://www.metaltoad.com/blog/angular-5-making-api-calls-httpclient-service
+  https://www.metaltoad.com/blog/angular-2-http-observables-and-concurrent-data-loading
+  https://www.metaltoad.com/blog/angular-2-using-http-service-write-data-api
+
+
+
+Claims
+https://stackoverflow.com/questions/42036810/asp-net-core-jwt-mapping-role-claims-to-claimsidentity
+https://stackoverflow.com/questions/48652426/implementing-custom-claim-with-extended-mvc-core-identity-user
+https://www.jerriepelser.com/blog/aspnetcore-jwt-saving-bearer-token-as-claim/
+https://jonhilton.net/identify-users-permissions-with-jwts-and-asp-net-core-webapi/
+https://tahirnaushad.com/2017/09/08/asp-net-core-2-0-bearer-authentication/
+
+
+Angular login
+
+
+http://brianflove.com/2017/04/10/angular-reactive-authentication/
+http://brianflove.com/2017/09/09/updating-to-ngrx-4/
+
+https://www.google.com.au/search?q=ngrx+router-store+RouterState+error&rlz=1C1GGRV_enAU786AU786&oq=ngrx+router-store+RouterState+error&aqs=chrome..69i57.20325j0j1&sourceid=chrome&ie=UTF-8
+https://github.com/ngrx/router-store
+https://github.com/ngrx/platform/issues/680
+https://github.com/ngrx/platform/blob/master/MIGRATION.md#ngrxrouter-store
+
+
+https://www.google.com.au/search?safe=active&rlz=1C1GGRV_enAU786AU786&ei=lw3PWsWUEIiY8wWSlqi4Bg&q=Angular5+login+jwt&oq=Angular5+login+jwt&gs_l=psy-ab.3..35i39k1l2j0i10k1l8.275456.278178.0.278373.11.9.0.0.0.0.672.1634.3-1j0j2.3.0....0...1c.1.64.psy-ab..8.3.1633....0.XEWHZLuIxJw
+
+https://github.com/auth0/angular2-jwt/tree/f7e99ddd8cbd0af3d159a885a5e024d214e62e7b
+
+
+https://blog.angular-university.io/angular-jwt-authentication/
+http://www.devglan.com/spring-security/angular-jwt-authentication
+https://dev.to/hitman666/jwt-authentication-in-an-angular-application-with-a-go-backend--13cg
+
+https://embed.plnkr.co/plunk/W4IPbH
+
+https://auth0.com/docs/security/store-tokens
+
+https://github.com/amcdnl
+
+
+
+https://medium.com/front-end-hacking/an-intro-to-ngrx-effects-ngrx-store-with-angular-4-c55c4d1d5baf
+
+Sent from my iPhone
+
+On 12 Apr 2018, at 1:39 am, George Pagotelis <georgepagotelis@hotmail.com> wrote:
+https://auth0.com/blog/managing-state-in-angular-with-ngrx-store/
+
+
+Sent from my iPhone
+
+On 12 Apr 2018, at 1:34 am, George Pagotelis <georgepagotelis@hotmail.com> wrote:
+
+https://hk.saowen.com/a/0528808387b6845cc4126f4ad8feeb781f58bc887b3a7820193bfed99633af23
+Sent from my iPhone
+
+On 12 Apr 2018, at 1:30 am, George Pagotelis <georgepagotelis@hotmail.com> wrote:
+
+https://medium.com/@amcdnl/authentication-in-angular-jwt-c1067495c5e0
+
+Sent from my iPhone
+
+On 12 Apr 2018, at 1:22 am, George Pagotelis <georgepagotelis@hotmail.com> wrote:
+http://brianflove.com/2017/04/10/angular-reactive-authentication/
+
+
+
+
+chrome install --> augury
+
+https://www.youtube.com/watch?v=ntJ-P-Cvo7o   module vs module
+
+https://codecraft.tv/courses/angular/routing/overview/
+https://codecraft.tv/courses/angular/unit-testing/classes-and-pipes/
+
+
+https://stackoverflow.com/questions/46439473/import-materialmodule-into-feature-module
+https://stackoverflow.com/questions/49245908/how-to-use-a-component-from-another-module-angular-5?rq=1
+https://stackoverflow.com/questions/48893602/angular4-multiple-modules-issue?rq=1
+https://angularfirebase.com/lessons/how-to-lazy-load-components-in-angular-4-in-three-steps/
+https://angular-2-training-book.rangle.io/handout/modules/lazy-loading-module.html
+https://angular-2-training-book.rangle.io/handout/forms/reactive-forms/reactive-forms_validation.html
+https://stackoverflow.com/questions/41827221/share-an-external-module-between-lazy-loaded-modules-in-angular2
+https://www.ibm.com/developerworks/library/wa-load-feature-modules-in-angular4/index.html
+https://www.ibm.com/developerworks/library?sort_by=&show_abstract=true&show_all=&search_flag=&contentarea_by=All+Zones&search_by=angular&product_by=-1&topic_by=-1&industry_by=-1&type_by=All+Types&ibm-search=Search
+https://blog.angular-university.io/angular2-ngmodule/
+
+https://medium.com/angularmedellin/lazy-loading-angular-modules-58fc844b5c7d
+https://stackoverflow.com/questions/43081634/how-shareding-component-between-modules-with-lazy-load
+https://blog.cloudboost.io/angular-faster-performance-and-better-user-experience-with-lazy-loading-a4f323b2cf4a
+
+https://www.npmjs.com/package/angular-web-storage
+https://github.com/marcj/angular2-localstorage
+https://www.npmjs.com/package/ngx-store
+https://www.npmjs.com/package/ngx-webstorage
+https://stackoverflow.com/questions/39010762/how-to-set-get-in-angular2-localstorage
+https://stackoverflow.com/questions/40589730/local-storage-in-angular-2/40590101
+https://www.npmjs.com/package/angular-async-local-storage
+
+https://github.com/coryrylan/ng-pokedex
+https://github.com/RSuter/NSwag
+https://compodoc.github.io/compodoc-demo-todomvc-angular/interceptors/NoopInterceptor.html#source
+
+
+https://angular.io/tutorial/toh-pt4
+
+https://auth0.com/blog/whats-new-in-angular5/
+
+https://dzone.com/articles/creating-a-front-end-for-your-user-profile-store-w
+https://medium.com/@ryanchenkie_40935/angular-authentication-using-route-guards-bf7a4ca13ae3
+https://realpython.com/user-authentication-with-angular-4-and-flask/
+
+
+https://medium.com/@cyrilletuzi/how-to-build-and-publish-an-angular-module-7ad19c0b4464
+https://medium.com/@cyrilletuzi/architecture-in-angular-projects-242606567e40
+https://medium.com/@cyrilletuzi/understanding-angular-modules-ngmodule-and-their-scopes-81e4ed6f7407
+
+
+https://medium.com/codingthesmartway-com-blog/angular-5-forms-update-9587c3735cd3
+https://medium.com/tag/angular-5
+
+
+https://stackoverflow.com/questions/39286667/browsermodule-has-already-been-loaded-error
+https://github.com/angular/angular/issues/15829
+
+
+https://stackoverflow.com/questions/45166844/how-to-import-angular-material-in-project
+https://stackoverflow.com/questions/48983564/lazy-loading-angular-modules-with-latest-angular-material-design-gives-error
+
+https://www.codeproject.com/Articles/1204810/Persistent-User-Settings-with-Angular-plus
+https://thinkster.io/tutorials/building-real-world-angular-2-apps/user-settings-page  ***
+https://github.com/gothinkster/angular-realworld-example-app/tree/m-4
+
+
+https://dzone.com/articles/the-beginners-guide-to-web-storage-api-and-related
+https://alligator.io/js/introduction-localstorage-sessionstorage/
+http://www.oodlestechnologies.com/blogs/Storing-Variables-in-Local-Storage-in-browser-using-ngx-webstorage
+
+
+
+https://medium.com/@cyrilletuzi/angular-2-async-local-storage-fd8609fa84e0
+
+https://medium.com/@amcdnl/reactive-angular-forms-with-ngrx-533a2f28c127
+
+
+
+
+https://meebleforp.com/blog/36/angular-2-is-terrible
+
+
+First, build your app
+   => ng build --prod --stats-json.
+This will add an extra dist/stats.json file that contains an analysis of the parts wrapped inside the bundle.
+
+  => npm install webpack-bundle-analyzer -D
+  Add a new script to your package.json file "analyzer": "webpack-bundle-analyzer dist/stats.json":
+  => npm run analyzer
+
+https://angularfirebase.com/lessons/pwa-performance-optimization-angular/
+https://angularfirebase.com/lessons/
+
+
+
+Try this
+  https://medium.com/@cyrilletuzi/angular-2-async-local-storage-fd8609fa84e0
+  https://medium.com/codingthesmartway-com-blog/angular-5-service-worker-b722e571e306
+https://hackernoon.com/angular-simple-in-memory-cache-service-on-the-ui-with-rxjs-77f167387e39
+https://www.strathweb.com/2017/01/building-microservices-with-asp-net-core-without-mvc/
+
+libraries
+============
+    npm install --save @angular/material @angular/cdk
+    npm install --save @angular/animations
+    npm install --save hammerjs
+
+
+Package.json
+=============
+  "zone.js": "^0.8.19"
+
+
+Rim_raf
+========
+  rimraf node_modules && npm install
+  	FOR /d /r . %d in (node_modules) DO @IF EXIST "%d" echo "%d" && rimraf "%d"
+
+  attrib +s +h "node_modules"
+
+
+npm libraries
+==============
+    https://coursetro.com/posts/code/113/How-to-Build-an-Angular-5-Material-App
+    https://codingthesmartway.com/angular-material-introduction/
+        npm install --save @angular/material @angular/cdk
+        npm install --save @angular/animations
+        npm install --save hammerjs
+
+
+https://material.io/icons/
+
+
+
+https://ng-bootstrap.github.io/#/getting-started
+  npm install @ng-bootstrap/ng-bootstrap –save
+
+
+https://mdbootstrap.com/components/#
+  npm install mdbootstrap -save
+
+
+https://coursetro.com/posts/code/132/Material-Design-Bootstrap-4-and-Angular-5-Tutorial---MdBootstrap
+    npm i --save angular-bootstrap-md chart.js@2.5.0 font-awesome hammerjs
+
+  // COPY TEMPLATES HERE
+  https://mdbootstrap.com/angular/layout/navigation/
+  https://favicon.io/
+
+
+Service workers
+=================
+  https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers
+  chrome://serviceworker-internals/
+  https://stackoverflow.com/questions/33704791/how-do-i-uninstall-a-service-worker
+  http://alistapart.com/article/application-cache-is-a-douchebag
+
+
+    https://angular.io/guide/lazy-loading-ngmodules
+    ng new customer-app --routing
+        ng generate module customers --routing
+        ng generate component customers/customer-list
+
+        ng generate module orders --routing
+        ng generate component orders/order-list
+
+
+VRS
+=====
+
+https://stackoverflow.com/questions/42779871/angular-core-feature-shared-modules-what-goes-where
+
+
+  ng generate module shared --routing
+  ng generate module public --routing
+  ng generate module core --routing
+    ng generate component core/header
+    ng generate component core/login
+    ng generate component core/not-found
+
+  ng generate module protected --routing
+  ng generate module features --routing
+  ng generate module testing --routing
+    ng generate component features/testing/ng-material
+    ng generate component features/testing/bootstrap
+    ng generate component features/testing/mdb
+    ng generate component features/testing/ngrx
+
+  ng generate module features/admin --routing
+    ng generate component features/admin/main
+
+  ng generate module feature-search --routing
+    ng generate component feature-search/search-list
+
+  ng generate module feature-reports --routing
+    ng generate component feature-reports/report-list
+
+  ng generate module feature-maintenance --routing
+    ng generate component feature-maintenance/search-quick
+
+  ng generate module feature-dashboard --routing
+    ng generate component features/feature-dashboard/expired-items
+    ng generate component features/feature-dashboard/unapproved-items
+    ng generate component features/feature-dashboard/missing-unapproved-items
+
+
+
+
+
+

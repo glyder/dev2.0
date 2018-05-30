@@ -1,0 +1,80 @@
+<!-- <h2>Dashboard</h2> -->
+
+<div class="row mb-sm-4 mt-md-0 green #b2dfdb teal lighten-4">
+    <div class="col-sm-12 col-md-6 col-lg-3">
+        Lob: {{ selectedLobID }} , Project: {{ selectedProjectID }} , Company: {{ selectedCompanyID }} , Individual: {{ selectedIndividualID }}
+        <br> {{ valueLobID | json }} , {{ valueProjectID | json }} , {{ valueCompanyID | json }} , {{ valueIndividualID | json }}
+    </div>
+</div>
+
+<div class="row mb-sm-4 mt-md-0 green #b2dfdb teal lighten-4">
+    <div class="col-sm-12 col-md-6 col-lg-3">
+        <div>
+            1.Lob:
+            <kendo-dropdownlist [data]="viewLob$ | async" [defaultItem]="placeHolderLob" class="prettyLob" #ddlLob (valueChange)="valueChangeLobID($event)" [textField]="'text'" [valueField]="'value'" [valuePrimitive]="true" [(ngModel)]="valueLobID">
+            </kendo-dropdownlist>
+            <!-- [suggest]="true" -->
+            <div class="d-inline bg-success text-white">
+                {{ (viewLob$ | async)?.length }}
+            </div>
+        </div>
+
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-3">
+        <div>
+            2.Project:
+            <kendo-dropdownlist [data]="viewProject$ | async" [defaultItem]="placeHolderProject" class="prettyProject" #ddlProject (valueChange)="valueChangeProjectID($event)" [textField]="'text'" [valueField]="'value'" [valuePrimitive]="true" [(ngModel)]="valueProjectID">
+            </kendo-dropdownlist>
+            <div class="d-inline bg-success text-white">
+                {{ (viewProject$ | async)?.length }}
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-3">
+        <div>
+            3.Company:
+            <kendo-dropdownlist [data]="viewCompany$ | async" [defaultItem]="placeHolderCompany" class="prettyCompany" #ddlCompany (valueChange)="valueChangeCompanyID($event)" [textField]="'text'" [valueField]="'value'" [valuePrimitive]="true" [(ngModel)]="valueCompanyID">
+            </kendo-dropdownlist>
+            <div class="d-inline bg-success text-white">
+                {{ (viewCompany$ | async)?.length }}
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-3">
+        <div>
+            4.Individual:
+            <kendo-dropdownlist [data]="viewIndividual$ | async" [defaultItem]="placeHolderIndividual" class="prettyIndividual" #ddlIndividual (valueChange)="valueChangeIndividualID($event)" [textField]="'text'" [valueField]="'value'" [valuePrimitive]="true" [(ngModel)]="valueIndividualID">
+            </kendo-dropdownlist>
+            <div class="d-inline bg-success text-white">
+                {{ (viewIndividual$ | async)?.length }}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id='output'></div>
+
+
+<!-- 1 - Expired Items -->
+<vrs-expired-items [paramLob]="selectedLobID" [paramProj]="selectedProjectID" [paramComp]="selectedCompanyID" [paramInd]="selectedIndividualID">
+</vrs-expired-items>
+
+<!-- 2 - Unapproved Items - VisRes -->
+<!-- <vrs-unapproved-items></vrs-unapproved-items> -->
+
+<!-- 3 - Mandatory Fields Missing/Unapproved Items - JDE -->
+<!-- <vrs-mandatory-fields></vrs-mandatory-fields> -->
+
+
+
+
+<!-- 
+    OLD MDB Code
+
+    <mdb-select [(ngModel)]="selectedLobID" 
+                [options]="lobListbox$" placeholder="Select All - Lobs" 
+                (ngModelChange)="onChangeLobID($event)"></mdb-select>
+
+
+
+-->

@@ -1,0 +1,67 @@
+/* 
+    Created on : 25/08/2015, 5:23:26 PM
+    Author     : rigonip
+*/
+
+@font-face {
+    font-family: 'AllerRegular';
+    src: url('assets/ventia-styles/fonts/aller_rg-webfont.eot');
+    src: url('assets/ventia-styles/fonts/aller_rg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/ventia-styles/fonts/aller_rg-webfont.woff2') format('woff2'),
+         url('assets/ventia-styles/fonts/aller_rg-webfont.woff') format('woff'),
+         url('assets/ventia-styles/fonts/aller_rg-webfont.ttf') format('truetype'),
+         url('assets/ventia-styles/fonts/aller_rg-webfont.svg#allerregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.deep-blue { color: #00334D; }      	/* or rgba(0, 51, 77, 1) */
+.sky-blue { color: #13B5EA; }       	/* or rgba(19, 181, 234, 1) */
+.light-green { color: #7BC143; }    	/* or rgba(123, 193, 67, 1) */
+.mid-green { color: #009946; }      	/* or rgba(0, 153, 70, 1) */
+.dark-green { color: #124734; }     	/* or rgba(18, 71, 52, 1)*/
+.dark-grey { color: #29353A; }      	/* or rgba(41, 53, 58, 1)*/
+.purple { color: #821482; }		   	/* or rgba(130, 20, 130, 1)*/
+
+.deep-blue-bg { background-color: #00334D; }      /* or rgba(0, 51, 77, 1) */
+.sky-blue-bg { background-color: #13B5EA; }       /* or rgba(19, 181, 234, 1) */
+.light-green-bg { background-color: #7BC143; }    /* or rgba(123, 193, 67, 1) */
+.mid-green-bg { background-color: #009946; }      /* or rgba(0, 153, 70, 1) */
+.dark-green-bg { background-color: #124734; }     /* or rgba(18, 71, 52, 1)*/
+.dark-grey-bg { background-color: #29353A; }      /* or rgba(41, 53, 58, 1)*/
+.purple-bg { background-color: #821482; }         /* or rgba(130, 20, 130, 1)*/
+
+h1, h2, h3 { font-family: 'AllerRegular', Trebuchet, 'Trebuchet MS', Verdana, Arial; }
+body, p { font-family: Trebuchet, 'Trebuchet MS', Verdana, Arial; color: #29353A; }
+
+.logo-banner { background: url('assets/ventia-styles/images/visionstream-banner.jpg') 0 0 no-repeat; display: block; width: 1535px; height: 424px; }
+.logo-large { background: url('assets/ventia-styles/images/visionstream-768.jpg') 0 0 no-repeat; display: block; width: 768px; height: 212px;}
+.logo-medium { background: url('assets/ventia-styles/images/visionstream-320.jpg') 0 0 no-repeat; display: block; width: 320px; height: 88px; }
+.logo-min { background: url('assets/ventia-styles/images/visionstream-min.jpg') 0 0 no-repeat; display: block; width: 188px; height: 52px; }
+.logo-reverse-banner { background: url('assets/ventia-styles/images/visionstream-reverse-banner.jpg') 0 0 no-repeat; display: block; width: 1535px; height: 424px; }
+.logo-reverse-large { background: url('assets/ventia-styles/images/visionstream-reverse-768.jpg') 0 0 no-repeat; display: block; width: 768px; height: 212px;}
+.logo-reverse-medium { background: url('assets/ventia-styles/images/visionstream-reverse-320.jpg') 0 0 no-repeat; display: block; width: 320px; height: 88px; }
+.logo-reverse-min { background: url('assets/ventia-styles/images/visionstream-reverse-min.jpg') 0 0 no-repeat; display: block; width: 188px; height: 52px; }
+
+.deep-blue-loader-1 { background: url('assets/ventia-styles/images/ajax-loader-1-deep-blue.gif') 0 0 no-repeat; display: inline-block; width: 55px; height: 55px; }
+.sky-blue-loader-1 { background: url('assets/ventia-styles/images/ajax-loader-1-sky-blue.gif') 0 0 no-repeat; display: inline-block; width: 55px; height: 55px; }
+.mid-green-loader-1 { background: url('assets/ventia-styles/images/ajax-loader-1-mid-green.gif') 0 0 no-repeat; display: inline-block; width: 55px; height: 55px; }
+.white-loader-1 { background: url('assets/ventia-styles/images/ajax-loader-1-white.gif') 0 0 no-repeat; display: inline-block; width: 55px; height: 55px; }
+
+.deep-blue-loader-2 { background: url('assets/ventia-styles/images/ajax-loader-2-deep-blue.gif') 0 0 no-repeat; display: inline-block; width: 32px; height: 32px; }
+.sky-blue-loader-2 { background: url('assets/ventia-styles/images/ajax-loader-2-sky-blue.gif') 0 0 no-repeat; display: inline-block; width: 32px; height: 32px; }
+.mid-green-loader-2 { background: url('assets/ventia-styles/images/ajax-loader-2-mid-green.gif') 0 0 no-repeat; display: inline-block; width: 32px; height: 32px; }
+.white-loader-2 { background: url('assets/ventia-styles/images/ajax-loader-2-white.gif') 0 0 no-repeat; display: inline-block; width: 32px; height: 32px; }
+
+.deep-blue-loader-3 { background: url('assets/ventia-styles/images/ajax-loader-3-deep-blue.gif') 0 0 no-repeat; display: inline-block; width: 32px; height: 32px; }
+.sky-blue-loader-3 { background: url('assets/ventia-styles/images/ajax-loader-3-sky-blue.gif') 0 0 no-repeat; display: inline-block; width: 32px; height: 32px; }
+.mid-green-loader-3 { background: url('assets/ventia-styles/images/ajax-loader-3-mid-green.gif') 0 0 no-repeat; display: inline-block; width: 32px; height: 32px; }
+.white-loader-3 { background: url('assets/ventia-styles/images/ajax-loader-3-white.gif') 0 0 no-repeat; display: inline-block; width: 32px; height: 32px; }
+
+.deep-blue-loader-4 { background: url('assets/ventia-styles/images/ajax-loader-4-deep-blue.gif') 0 0 no-repeat; display: inline-block; width: 100px; height: 100px; }
+.sky-blue-loader-4 { background: url('assets/ventia-styles/images/ajax-loader-4-sky-blue.gif') 0 0 no-repeat; display: inline-block; width: 100px; height: 100px; }
+.mid-green-loader-4 { background: url('assets/ventia-styles/images/ajax-loader-4-mid-green.gif') 0 0 no-repeat; display: inline-block; width: 100px; height: 100px; }
+.white-loader-4 { background: url('assets/ventia-styles/images/ajax-loader-4-white.gif') 0 0 no-repeat; display: inline-block; width: 100px; height: 100px; }
+
+/*************************************************************/
+// Loading Form

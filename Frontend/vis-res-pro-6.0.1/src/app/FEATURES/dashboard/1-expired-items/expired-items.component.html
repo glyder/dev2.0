@@ -1,0 +1,115 @@
+<h4>Expired Items ( Param: {{ paramLob }} {{ paramProj }} {{ paramComp }} {{ paramInd }}) ** Service: ( {{ selectedLobID }} {{ selectedProjectID }} {{ selectedCompanyID }} {{ selectedIndividualID }})
+</h4>
+
+<!-- <ul>
+    <li *ngFor="let x of CompanyRecordsExpiredInsurances$">
+        {{ x.insuranceType }}
+    </li>
+    </ul> -->
+
+
+<div class="row mt-sm-4 mt-md-0">
+    <div class="col-sm-12 col-md-6 col-lg-3">
+        lobID:
+        <div class="d-inline bg-warning  text-white">
+            {{ selectedLobID }}
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-3">
+        projectID:
+        <div class="d-inline bg-warning  text-white">
+            {{ selectedProjectID }}
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-3">
+        companyID:
+        <div class="d-inline bg-warning  text-white">
+            {{ selectedCompanyID }}
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-3">
+        individualID:
+        <div class="d-inline bg-warning  text-white">
+            {{ selectedIndividualID }}
+        </div>
+    </div>
+</div>
+
+<div class="row">
+
+    <div class="col-sm-12 col-md-6 col-lg-3">
+        <!-- 1 of 4 columns -->
+        <div class="card mb-4">
+            <div class="card-header teal lighten-2 white-text gradient-card-header blue-gradient">
+                Expired Insurance
+            </div>
+            <div class="card-body">
+                <!-- <h4 class="card-title">Special title treatment</h4>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a class="btn btn-teal lighten-2 waves-light" mdbRippleRadius>Go somewhere</a> -->
+                <ul class="list-group" *ngFor="let item of CompanyRecordsExpiredInsurances$">
+                    <li class="list-group-item d-flex justify-content-between text-nowrap">
+                        {{ item.insuranceType }}
+                        <span class="badge badge-primary badge-pill">{{ item.numberExpired }}</span>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-12 col-md-6 col-lg-3">
+        <!-- 2 of 4 columns -->
+        <div class="card">
+            <div class="card-header teal lighten-2 white-text gradient-card-header blue-gradient">
+                Insurance due within 30 Days
+            </div>
+            <div class="card-body">
+
+                <ul class="list-group" *ngFor="let item of CompanyRecordsInsuranceDues$">
+                    <li class="list-group-item d-flex justify-content-between text-nowrap">
+                        {{ item.insuranceType }}
+                        <span class="badge badge-primary badge-pill">{{ item.numberExpired }}</span>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-12 col-md-6 col-lg-3">
+        <!-- 3 of 4 columns -->
+        <div class="card">
+            <div class="card-header teal lighten-2 white-text gradient-card-header blue-gradient">
+                Individual Records
+            </div>
+            <div class="card-body">
+
+                <ul class="list-group" *ngFor="let item of IndividualRecords$">
+                    <li class="list-group-item d-flex justify-content-between text-nowrap">
+                        {{ item.insuranceType }}
+                        <span class="badge badge-primary badge-pill">{{ item.numberExpired }}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-12 col-md-6 col-lg-3">
+        <!-- 4 of 4 columns -->
+        <div class="card">
+            <div class="card-header teal lighten-2 white-text gradient-card-header blue-gradient">
+                Contract Records
+            </div>
+            <div class="card-body">
+
+                <ul class="list-group" *ngFor="let item of ContractRecords$">
+                    <li class="list-group-item d-flex justify-content-between text-nowrap">
+                        {{ item.insuranceType }}
+                        <span class="badge badge-primary badge-pill">{{ item.numberExpired }}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

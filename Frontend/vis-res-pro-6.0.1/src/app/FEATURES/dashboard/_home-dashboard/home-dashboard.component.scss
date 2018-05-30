@@ -1,0 +1,23 @@
+:host {
+    box-sizing: border-box;
+    display: none;
+    background: rgb(219, 247, 196);
+  }
+  
+  :host.is-open {
+    display: block;
+  }
+
+  // ==================================
+
+  .example-wrapper { min-height: 280px; align-content: flex-start; }
+  .example-wrapper p, .example-col p { margin: 0 0 10px; }
+  .example-wrapper p:first-child, .example-col p:first-child { margin-top: 0; }
+  .example-col { display: inline-block; vertical-align: top; padding-right: 20px; padding-bottom: 20px; }
+  .example-config { margin: 0 0 20px; padding: 20px; background-color: rgba(0,0,0,.03); border: 1px solid rgba(0,0,0,.08); }
+
+  // .prettyListbox { width: 300px; }
+  .prettyLob { width: 240px; }
+  .prettyProject { width: 300px; }
+  .prettyCompany { width: 240px; }
+  .prettyIndividual { width: 240px; }

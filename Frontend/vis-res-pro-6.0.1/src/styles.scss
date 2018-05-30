@@ -1,0 +1,45 @@
+/* You can add global styles to this file, and also import other style files */
+
+// ===============================================================
+/* Material Design 5 */
+// @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~@angular/material/prebuilt-themes/purple-green.css"; // added in angular.json
+
+// ===============================================================
+/* Kendo UI */
+
+// $accent: #51eb6b;
+
+@import "~@progress/kendo-theme-default/scss/all";
+    // import only the PanelBar and Grid styles
+    // @import "~@progress/kendo-theme-default/scss/panelbar";
+    // @import "~@progress/kendo-theme-default/scss/grid";
+
+// ===============================================================
+/* Ventia Styles - Paul Rigoni */
+@import "./styles/ventia.scss";
+
+// ===============================================================
+// Variable overrides
+
+// https://mdbootstrap.com/css/bootstrap-variables/
+// https://mdbootstrap.com/md-bootstrap-sitemap/
+
+
+// $bg-color: whiteSmoke; // rgb(218, 160, 160);
+// body { 
+//      background: $bg-color;
+//      padding: 10px 10px;
+// }
+
+$theme-colors: (
+  primary: #006400
+)
+
+
+
+// ===========================================================
+
+// ===========================================================
+
+// ===========================================================

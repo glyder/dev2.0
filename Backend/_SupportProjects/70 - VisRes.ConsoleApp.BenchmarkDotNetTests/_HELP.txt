@@ -1,0 +1,10 @@
+﻿
+
+http://benchmarkdotnet.org
+http://benchmarkdotnet.org/Overview.htm
+http://benchmarkdotnet.org/Guides/ChoosingRunStrategy.htm
+
+http://mattwarren.org/2016/02/17/adventures-in-benchmarking-memory-allocations/
+
+https://dotnetcoretutorials.com/2017/12/04/benchmarking-net-core-code-benchmarkdotnet/
+https://www.strathweb.com/2018/03/lightweight-net-core-benchmarking-with-benchmarkdotnet-and-dotnet-script/

@@ -1,0 +1,135 @@
+<style>
+    .mat-expansion-panel-header {
+        background-color: lightgreen !important;
+    }
+</style>
+
+
+<mat-accordion>
+
+    <!-- ********************************************************************************************* -->
+    <!-- WEB API -->
+
+    <mat-expansion-panel [expanded]="true"
+                         (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+      <mat-expansion-panel-header class="mat-background-primary">
+          <mat-panel-title>Web API - http://localhost:3333/</mat-panel-title>
+      </mat-expansion-panel-header>
+
+      <!-- ***** -->
+      <mat-form-field>
+          <mat-select placeholder="Favorite food">
+              <mat-option *ngFor="let food of foods" [value]="food.value">
+                  {{ food.viewValue }}
+              </mat-option>
+          </mat-select>
+      </mat-form-field>
+
+      <!-- ***** -->
+      <mat-form-field>
+          <mat-select placeholder="Favorite books">
+              <mat-option *ngFor="let book of books$" [value]="book.Id">
+                  {{ book.title }}
+              </mat-option>
+          </mat-select>
+      </mat-form-field>
+
+      <!-- ***** -->
+
+      <!-- ***** -->
+
+
+
+    </mat-expansion-panel>
+
+    <!-- ********************************************************************************************* -->
+    <!-- MATERIAL - UI  -->
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+          <mat-panel-title>Material - UI components - input fields, etc.</mat-panel-title>
+      </mat-expansion-panel-header>
+
+      <mat-form-field>
+          <input matInput value="GP" placeholder="First name" #hello>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput value="Disco party!" placeholder="Message" #message>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput value="Dance" placeholder="Action" #action>
+      </mat-form-field>
+
+      <button mat-button (click)="openSnackBar(hello.value, action.value)">Show snack-bar</button>
+
+      <mat-action-row>
+        <button mat-button>Click me</button>
+      </mat-action-row>
+    </mat-expansion-panel>
+
+  <!-- ********************************************************************************************* -->
+    <!-- VRS - UI - BUTTONS  -->
+
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>VRS - UI - Buttons... </mat-panel-title>
+            <!-- <mat-panel-description>Type your name and age</mat-panel-description> -->
+        </mat-expansion-panel-header>
+
+        <app-button label="Login" btnCss="" icon="fa-key" id="login" [complete]="complete" (onclick)="button_login($event)"></app-button>
+
+        <app-button label="Test" btnCss="" icon="fa-ambulance" id="Test" (onclick)="button_test($event)"></app-button>
+
+    </mat-expansion-panel>
+
+    <!-- ********************************************************************************************* -->
+    <!-- Flex layout -->
+
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>@angular/flex-layout</mat-panel-title>
+        </mat-expansion-panel-header>
+
+        Testing @angular/flex-layout<br> Think this is the same as:
+        <a href="https://mdbootstrap.com/angular/utilities/flexbox/">mdb Flexbox</a>
+
+        <div class="container d-flex p-2" fxLayout fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="10px" fxLayoutGap.xs="10px">
+            <div class="item item-1 light-green darken-1 white-text" fxFlex="15%">Item 1</div>
+            <div class="item item-2 light-green darken-3 white-text" fxFlex="20%" fxFlexOrder="3">Item 2</div>
+            <div class="item item-3 light-green darken-2 white-text" fxFlex>Item 3</div>
+        </div>
+
+        <div class="container" fxLayout fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="10px" fxLayoutGap.xs="0">
+            <div class="item item-4 lime darken-1 white-text" fxFlex fxFlexOffset="50px" fxFlexOffset.xs="0">Item 4</div>
+            <div class="item item-5 lime darken-1 white-text" fxFlex="200px">Item 5</div>
+        </div>
+
+    </mat-expansion-panel>
+    <!--
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+            <mat-panel-title>Self aware panel</mat-panel-title>
+            <mat-panel-description>Currently I am {{panelOpenState ? 'open' : 'closed'}}</mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>I'm visible because I am open</p>
+    </mat-expansion-panel> -->
+    <!-- ********************************************************************************************* -->
+
+
+    <!-- ********************************************************************************************* -->
+    <!-- ********************************************************************************************* -->
+    <!-- TEMPLATE TO STEAL
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+            <mat-panel-title>Mr Title here</mat-panel-title>
+        </mat-expansion-panel-header>
+        Put your controls here!!!
+    </mat-expansion-panel>
+  -->
+    <!-- ********************************************************************************************* -->
+
+
+</mat-accordion>

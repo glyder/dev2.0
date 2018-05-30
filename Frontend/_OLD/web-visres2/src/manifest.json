@@ -1,0 +1,17 @@
+{
+    "name": "VisRes 2.0",
+    "short_name": "VisRes",
+    "theme_color": "#ef5350",
+    "background_color": "#ef5350",
+    "display": "standalone",
+    "orientation": "portrait",
+    "Scope": "/",
+    "start_url": "/",
+    "description": "A fast progressive web app VisRes 2.0",
+    "icons": [{
+        "src": "assets/images/icons/icon-48x48.ico",
+        "sizes": "48x48",
+        "type": "image/ico"
+    }],
+    "splash_pages": null
+}

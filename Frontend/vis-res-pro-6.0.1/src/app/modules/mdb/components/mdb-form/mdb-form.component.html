@@ -1,0 +1,135 @@
+<h4>MDB Form</h4>
+
+
+
+<form class="form-inline">
+    <div class="form-check mr-3">
+        <input class="form-check-input" type="checkbox" id="checkbox11" checked="checked">
+        <label class="form-check-label" for="checkbox11">Classic checkbox</label>
+    </div>
+    <div class="form-check mr-3">
+        <input class="form-check-input" type="checkbox" class="filled-in" id="checkbox22" checked="checked">
+        <label class="form-check-label" for="checkbox22">Filled-in checkbox</label>
+    </div>
+    <div class="form-check mr-3">
+        <input class="form-check-input" type="checkbox" id="checkbox33" checked="checked">
+        <label class="form-check-label" for="checkbox33">Classic checkbox</label>
+    </div>
+    <div class="form-check mr-3">
+        <input class="form-check-input" name="group1" type="radio" id="radio11" checked="checked">
+        <label class="form-check-label" for="radio11">Option 1</label>
+    </div>
+
+    <div class="form-check mr-3">
+        <input class="form-check-input" name="group1" type="radio" id="radio21">
+        <label class="form-check-label" for="radio21">Option 2</label>
+    </div>
+
+    <div class="form-check mr-3">
+        <input class="form-check-input" name="group1" type="radio" id="radio31">
+        <label class="form-check-label" for="radio31">Option 3</label>
+    </div>
+</form>
+
+<hr>
+<br>
+
+<form>
+    <div class="md-form form-group">
+        <i class="fa fa-envelope prefix"></i>
+
+        <input mdbInputDirective data-error="wrong email" data-success="valid email" minLength="8" maxLength="25" type="email" class="form-control" id="form9" name="email" mdbInputDirective>
+
+        <label for="form9">Type your e-mail</label>
+
+    </div>
+
+    <div class="md-form form-group">
+        <i class="fa fa-lock prefix"></i>
+
+        <input mdbInputDirective data-error="wrong password" data-success="valid password" minLength="10" maxLength="25" type="password" class="form-control" id="form10" name="password">
+
+        <label for="form10">Type your password</label>
+    </div>
+
+    <div class="md-form form-group">
+        <input type="text" id="form11" class="form-control" disabled>
+        <label for="form11" class="disabled">Example label</label>
+    </div>
+
+    <div class="md-form form-group">
+        <a class="btn btn-primary btn-lg waves-light" mdbWavesEffect>Login</a>
+    </div>
+
+</form>
+
+<hr>
+<br>
+
+<form>
+    <!--First row-->
+    <div class="row">
+        <!--First column-->
+        <div class="col-md-6">
+            <div class="md-form">
+                <i class="fa fa-envelope prefix"></i>
+                <input mdbInputDirective type="email" class="form-control" id="form9" name="email">
+                <label for="form9">Type your e-mail</label>
+            </div>
+        </div>
+
+        <!--Second column-->
+        <div class="col-md-6">
+            <div class="md-form">
+                <i class="fa fa-lock prefix"></i>
+                <input mdbInputDirective type="password" class="form-control" id="form10" name="password">
+                <label for="form10">Type your password</label>
+            </div>
+        </div>
+    </div>
+    <!--/.First row-->
+
+    <!--Second row-->
+    <div class="row">
+        <!--First column-->
+        <div class="col-md-12">
+
+            <div class="md-form">
+                <textarea mdbInputDirective type="text" id="form76" class="md-textarea form-control" rows="3"></textarea>
+                <label for="form76">Basic textarea</label>
+            </div>
+
+        </div>
+    </div>
+    <!--/.Second row-->
+
+    <!--Third row-->
+    <div class="row">
+
+        <!--First column-->
+        <div class="col-md-4">
+            <div class="md-form">
+                <input mdbInputDirective type="text" id="form41" class="form-control">
+                <label for="form41" class="">Example label</label>
+            </div>
+        </div>
+
+        <!--Second column-->
+        <div class="col-md-4">
+            <div class="md-form">
+                <input mdbInputDirective type="text" id="form51" class="form-control">
+                <label for="form51" class="">Example label</label>
+            </div>
+        </div>
+
+        <!--Third column-->
+        <div class="col-md-4">
+            <div class="md-form">
+                <input mdbInputDirective type="text" id="form61" class="form-control">
+                <label for="form61" class="">Example label</label>
+            </div>
+        </div>
+
+    </div>
+    <!--/.Third row-->
+</form>

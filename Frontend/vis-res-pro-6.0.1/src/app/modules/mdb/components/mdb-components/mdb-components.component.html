@@ -1,0 +1,269 @@
+<h1 class="h1-responsive animated bounce infinite">
+    Mdb Components
+</h1>
+
+<!-- alerts -->
+<div class="alert alert-primary" role="alert">
+    This is a primary alert—check it out!
+</div>
+
+<!--Dropdown primary-->
+.dropdown-primary .dropdown-default .dropdown-secondary .dropdown-success .dropdown-elegant .dropdown-danger .dropdown-info .dropdown-warning .dropdown-ins
+<div class="dropdown" dropdown (onShown)="onShown()" (isOpenChange)="isOpenChange()" (onHidden)="onHidden()">
+
+    <!--Trigger-->
+    <button dropdownToggle class="btn btn-success dropdown-toggle waves-light" type="button" mdbWavesEffect>
+        Dropdown success
+    </button>
+
+    <!--Menu-->
+    <div class="dropdown-menu dropdown-default">
+        <a class="dropdown-item" href="#">Action</a>
+        <h6 class="dropdown-header">Dropdown header</h6>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item disabled" href="#">Something else here</a>
+        <div class="divider dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Something else here</a>
+    </div>
+</div>
+<!--/Dropdown primary-->
+
+<!-- Split button -->
+<div class="btn-group" dropdown (onShown)="onShown()" (isOpenChange)="isOpenChange()" (onHidden)="onHidden()">
+    <button type="button" class="btn btn-danger waves-light" mdbWavesEffect>Action</button>
+    <button type="button" dropdownToggle class="btn btn-danger dropdown-toggle dropdown-toggle-split px-3 waves-light" mdbWavesEffect></button>
+    <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+</div>
+
+
+(event)="name.show()" (event)="name.hide()" (event)="name.toggle(value: boolean)()"
+
+<!-- toggle -->
+<button class="btn btn-primary waves-light" (mouseenter)="dropdown.toggle()">Dropdown toggle</button>
+
+<div class="btn-group" dropdown #dropdown="bs-dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle waves-light" mdbWavesEffect>
+        Dropdown
+    </button>
+
+    <div class="dropdown-menu dropdown-primary">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+        <div class="divider dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+</div>
+
+<br>
+<ul class="list-group">
+    <li class="list-group-item">Cras justo odio</li>
+    <li class="list-group-item">Dapibus ac facilisis in</li>
+</ul>
+<div class="list-group">
+    <a href="#" class="list-group-item active waves-light" mdbWavesEffect>
+        Linked Item
+    </a>
+    <a href="#" class="list-group-item waves-light" mdbWavesEffect>Dapibus ac facilisis in</a>
+</div>
+<br>
+<ul class="list-group">
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        Labels
+        <span class="badge badge-primary badge-pill">14</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        Dapibus ac facilisis in
+        <span class="badge badge-primary badge-pill">2</span>
+    </li>
+</ul>
+<br>
+<div class="list-group">
+    <a href="#" class="list-group-item active waves-light" mdbWavesEffect>
+            Links & buttons
+        </a>
+    <a href="#" class="list-group-item list-group-item-action waves-light list-group-item-success" mdbWavesEffect>Dapibus ac facilisis in</a>
+    <a href="#" class="list-group-item list-group-item-action disabled waves-light list-group-item-danger" mdbWavesEffect>Vestibulum at eros</a>
+</div>
+
+<br>
+<div class="list-group">
+    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+        <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">List group item heading</h5>
+            <small>3 days ago</small>
+        </div>
+        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+        <small>Donec id elit non mi porta.</small>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">List group item heading</h5>
+            <small class="text-muted">3 days ago</small>
+        </div>
+        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+        <small class="text-muted">Donec id elit non mi porta.</small>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">List group item heading</h5>
+            <small class="text-muted">3 days ago</small>
+        </div>
+        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+        <small class="text-muted">Donec id elit non mi porta.</small>
+    </a>
+</div>
+
+<br>
+
+<!-- Tabset tabs -->
+<mdb-tabset [vertical]="true" [buttonClass]="'tabs-white flex-column'" [contentClass]="'vertical'">
+    <!--Panel 1-->
+    <mdb-tab heading="<a class='list-group-item'> Home - Vertical Tab </a>">
+        <div class="row">
+            <div class="col-12 waves-light" mdbWavesEffect>
+                <br>
+                <p class="h5"> Heading 1 </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam similique, eveniet inventore magni laborum, a sed quaerat quam dicta possimus, quos sint veniam. Minus vero quo voluptates, error, quisquam impedit.</p>
+            </div>
+        </div>
+    </mdb-tab>
+    <!--Panel 2-->
+    <mdb-tab heading="<a class='list-group-item'> Profile </a>">
+        <div class="row">
+            <div class="col-12 waves-light" mdbWavesEffect>
+                <br>
+                <p class="h5"> Heading 2 </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam similique, eveniet inventore magni laborum, a sed quaerat quam dicta possimus, quos sint veniam. Minus vero quo voluptates, error, quisquam impedit.</p>
+            </div>
+        </div>
+    </mdb-tab>
+    <!--Panel 3-->
+    <mdb-tab heading="<a class='list-group-item'> Messages </a>">
+        <div class="row">
+            <div class="col-12 waves-light" mdbWavesEffect>
+                <br>
+                <p class="h5"> Heading 3 </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam similique, eveniet inventore magni laborum, a sed quaerat quam dicta possimus, quos sint veniam. Minus vero quo voluptates, error, quisquam impedit.</p>
+            </div>
+        </div>
+    </mdb-tab>
+    <!--Panel 4-->
+    <mdb-tab heading="<a class='list-group-item'> Settings </a>">
+        <div class="row">
+            <div class="col-12 waves-light" mdbWavesEffect>
+                <br>
+                <p class="h5"> Heading 4 </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam similique, eveniet inventore magni laborum, a sed quaerat quam dicta possimus, quos sint veniam. Minus vero quo voluptates, error, quisquam impedit.</p>
+            </div>
+        </div>
+    </mdb-tab>
+</mdb-tabset>
+
+<!--First review-->
+<h4>Reviews</h4>
+<div class="media mb-1">
+    <a class="media-left waves-light">
+        <img class="rounded-circle" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-13.jpg" alt="Generic placeholder image">
+    </a>
+    <div class="media-body">
+        <h4 class="media-heading">John Doe</h4>
+        <ul class="rating inline-ul">
+            <li><i class="fa fa-star amber-text"></i></li>
+            <li><i class="fa fa-star amber-text"></i></li>
+            <li><i class="fa fa-star amber-text"></i></li>
+            <li><i class="fa fa-star"></i></li>
+            <li><i class="fa fa-star"></i></li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi cupiditate temporibus iure soluta. Quasi mollitia maxime nemo quam accusamus possimus, voluptatum expedita assumenda. Earum sit id ullam eum vel delectus!</p>
+    </div>
+</div>
+<br>
+
+<div class="row">
+    <div class="col-md-4">
+        <!--Panel-->
+        <div class="card card-body">
+            <h4 class="card-title">Panel title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="flex-row">
+                <a class="card-link">Card link</a>
+                <a class="card-link">Another link</a>
+            </div>
+        </div>
+        <!--/.Panel-->
+    </div>
+    <div class="col-md-4">
+        <!--Panel-->
+        <div class="card">
+            <div class="card-header deep-orange lighten-1 white-text">
+                Featured
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">Special title treatment</h4>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a class="btn btn-deep-orange waves-light" mdbWavesEffect>Go somewhere</a>
+            </div>
+        </div>
+        <!--/.Panel-->
+    </div>
+    <div class="col-md-4">
+        <!--Panel-->
+        <div class="card text-center" style="width: 22rem;">
+            <div class="card-header success-color white-text">
+                Featured
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">Special title treatment</h4>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a class="btn btn-success btn-sm waves-light" mdbWavesEffect>Go somewhere</a>
+            </div>
+            <div class="card-footer text-muted success-color white-text">
+                <p class="mb-0">2 days ago</p>
+            </div>
+        </div>
+        <!--/.Panel-->
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-6">
+
+        <!--Card Success-->
+        <div class="card info-color text-center z-depth-2">
+            <div class="card-body">
+                <p class="white-text mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            </div>
+        </div>
+        <!--/.Card Success-->
+
+    </div>
+
+    <div class="col-md-6">
+
+
+        <!--Card Info-->
+        <div class="card success-color text-center z-depth-2">
+            <div class="card-body">
+                <p class="white-text mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            </div>
+        </div>
+        <!--/.Card Info-->
+        <br>
+        <!--Card Default-->
+        <div class="card mdb-color lighten-2 text-center z-depth-2">
+            <div class="card-body">
+                <p class="white-text mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            </div>
+        </div>
+        <!--/.Card Default-->
+
+    </div>
+</div>

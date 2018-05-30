@@ -1,0 +1,29 @@
+.nav-link {
+  cursor:pointer;
+}
+
+.tag-pill{
+  cursor:pointer;
+}
+
+.tag-default {
+    color: #fff !important;
+    font-size: .8rem;
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+    white-space: nowrap;
+    margin-right: 3px;
+    margin-bottom: .2rem;
+    display: inline-block;
+}
+
+.tag-default {
+    background-color: #818a91;
+}
+
+.tag-pill {
+    padding-right: .6em;
+    padding-left: .6em;
+    border-radius: 10rem;
+    background-color: #5CB85C
+}

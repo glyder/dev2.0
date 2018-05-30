@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="1.50.4" />
+    <PackageReference Include="Dapper.Fluent" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\30 - VisRes.Data.EFCore\VisRes.Data.EFCore.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Dashboard\" />
+    <Folder Include="User\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="CoreClientLibrary">
+      <HintPath>..\0 - DLLs\UAMDll\CoreClientLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

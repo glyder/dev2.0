@@ -1,0 +1,19 @@
+<div class="sidebar">
+  <p>popular tags (component)</p>
+
+  <div class="tag-list">
+    <a *ngFor="let tag of tags"
+        (click)="setListTo('all', {tag: tag})"
+        class="tag-default tag-pill">
+        {{ tag }}
+    </a>
+  </div>
+
+  <div [hidden]="tagsLoaded">
+    loading tags...
+  </div>
+
+  <div [hidden]="!tagsLoaded || tags.length > 0">
+    no tags are here... yet.
+  </div>
+</div>

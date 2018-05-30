@@ -1,0 +1,141 @@
+
+
+
+http://jasonwatmore.com/post/2016/08/16/angular-2-jwt-authentication-example-tutorial
+
+
+
+ng set --global warnings.versionMismatch=false
+
+    https://stackoverflow.com/questions/42779871/angular-core-feature-shared-modules-what-goes-where
+    https://stackoverflow.com/questions/48970553/want-to-upgrade-project-from-angular-5-to-angular-6
+
+
+Modules / Components
+======================
+
+    ng new vis-res-pro-6.0.1 --routing
+        ng g component home
+        ng g component login
+
+    Core
+    =====
+        ng g module core --routing
+
+    Modules
+    ========
+        ng g module _modules/mdb --routing
+
+        ng g module _modules/material --routing  
+            ng g c _modules/material/material-tester
+
+    login
+    ======
+        ng g module login --routing
+            ng g component login/login-form
+            ng g component login/tc
+
+
+    Features
+    =========
+
+        Dashboard
+        MyProjects
+        Maintenance
+        Reports
+        Security
+        MyAccount
+
+        ng g module features/dashboard --routing
+            ng g component features/dashboard/home-dashboard
+
+            ng g module features/myprojects --routing
+                ng g c features/myprojects/home-myprojects
+                ng g c features/myprojects/projects-details
+                ng g c features/myprojects/projects-code           ==> rename project-code to code for directory only
+            
+            ng g module features/maintenance --routing
+                ng g component features/maintenance/home-maintenance
+            
+            ng g module features/reports --routing
+                ng g component features/reports/home-reports
+            
+            ng g module features/security --routing
+                ng g component features/security/home-security
+
+            ng g module features/myaccount --routing
+                ng g component features/myaccount/home-myaccount
+
+        ng g module _modules/mdb --routing
+
+        ng g module _modules/material --routing
+
+    Shared
+    ========
+        ng g module shared --routing
+            ng g component shared/layout/footer
+            ng g component shared/layout/header-sidenav
+
+
+    Testing
+    ========
+        ng g module testing --routing
+            ng g component testing/home-testing
+            ng g component testing/ventia-styles
+
+    Api
+    ========
+        ng g module api --routing
+            ng g component testing/home-testing
+            ng g component testing/ventia-styles
+
+
+Ctrl+Shift+P and type Open User Settings.
+==========================================
+    settings.json / workspace
+        "files.autoSave": "afterDelay",
+        "prettier.singleQuote": true
+
+
+ES5 - runs in the browser, no compile required
+ES 2015 - Lots of new featueres (classes, let, arrow, etc.)
+TypeScript = Superset of Javascript, strong typing, great IDE tooling
+    http://www.typescriptlang.org/Playground
+    Typescript Fundamentals, Using ES6 with Typescript
+
+ES2015
+    Export => product.ts      => export class Product { }               // Transpiles ts -> js            
+    Import => product-list.ts => import { Product } from './product'    // "./product" is the js file
+
+Angular
+
+
+Decorator - A function that adds metadata to a class, it's members or it's method argument
+            - prefix with @, angular provides built-in decorators:
+                @Component(), @NgModule, Our own
+            - positioning immediately infront of the class with NO SEMICOLON (like C# attributes)
+            - pass an object to component function() (always a fn) with { }
+
+    @Component({                                    // Component decorator
+        selector: 'mdb-root',                       // Directive name used in HTML
+        templateUrl: 'app.component.html',          // View Layout => Binding {{ }}
+        styleUrls: ['app.component.css']            // 
+
+    }) 
+
+https://www.npmjs.com/~angular
+    available import libraries in angular
+
+Bootstrapping (AppModule)
+    Imports => BrowserModule
+    Exports
+    Declarations => AppComponent
+    Providers
+    Bootstrap => AppComponent
+
+
+http://blogs.msmvps.com/deborahk/angular-2-getting-started-problem-solver/
+https://app.pluralsight.com/library/courses/angular-2-getting-started/discussion
+
+run netstat –ano | findstr :4222
+    => taskkill /PID 10764 /F

@@ -1,0 +1,14 @@
+﻿
+
+Check
+	https://ardalis.com/aspnet-core-inmemorydatabase-upgrade-breaking-change
+
+Testing Async Pull (implement)
+=================================
+	https://scottsauber.com/2017/10/16/using-asp-net-core-testserver-ef-core-in-memory-db-together/
+
+
+Check & implement?
+===================
+	https://www.codeguru.com/columns/dotnet/working-with-the-ef-core-and-the-in-memory-database.html
+	https://stackoverflow.com/questions/40687513/allow-the-end-user-to-switch-the-entity-framework-provider-at-runtime

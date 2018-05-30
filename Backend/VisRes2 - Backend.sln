@@ -1,0 +1,149 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10. Model", "10. Model", "{D4F26361-B61D-4259-8583-73D4922913F9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "30. Data", "30. Data", "{5C5C4BAA-5574-402D-9C36-671C2798DC84}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "70. Testing", "70. Testing", "{BE698916-7E0C-40E4-8E02-3CC8E40A3648}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "60. App", "60. App", "{41BECD44-B297-41AD-926F-F3B28C86C644}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "50. Services + Business", "50. Services + Business", "{000BF866-AFB6-419E-A932-D7B9F9E512DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "20. Core + Infrastructure", "20. Core + Infrastructure", "{08354363-5476-437C-ABCA-CF3796181112}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebAPI", "WebAPI", "{1BD0A358-DA6A-47C5-BEB2-8DD9A1D96D67}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "40. Repositories", "40. Repositories", "{F334F22D-856D-4605-AE01-76A503896948}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BenchMark", "BenchMark", "{3886B150-53F1-4856-907C-6BD0F8CB18C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "XUnit", "XUnit", "{D01B7576-D764-4578-8A40-E4C1188F4D8A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VisRes.Models", "10 - VisRes.Models\VisRes.Models.csproj", "{F22D2CFA-A866-4899-8B46-7E715715605A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VisRes.Core.Infrastructure", "20 - VisRes.Core.Infrastructure\VisRes.Core.Infrastructure.csproj", "{52D3381E-CA51-4342-98A2-1A4748E886C6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VisRes.Data.EFCore", "30 - VisRes.Data.EFCore\VisRes.Data.EFCore.csproj", "{5404C7F4-EFA4-4BF7-A3BC-EC336D8C7AE7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VisRes.Data.DapperCore", "30 - VisRes.Data.DapperCore\VisRes.Data.DapperCore.csproj", "{C65A80DE-7E81-4C8D-BAC6-631C1D54CFC6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VisRes.Data.Repositories", "40 - VisRes.Data.Repositories\VisRes.Data.Repositories.csproj", "{FB2A6561-B0BB-4437-A1C8-897E6989A1AF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VisRes.Business.Services", "50 - VisRes.Business.Services\VisRes.Business.Services.csproj", "{C2B854F0-C9AE-4E72-9073-58115AA571D0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VisRes.Test.XUnit", "70 - VisRes.Test.XUnit\VisRes.Test.XUnit.csproj", "{B64B8A63-491F-4340-BAA6-B9AAED22D39F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VisRes.Service.Api", "60 - VisRes.Service.Api\VisRes.Service.Api.csproj", "{F5CE0537-F18C-4673-A9E2-B4D74DA46D3E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VisRes.ConsoleApp.BenchmarkDotNetTests", "_SupportProjects\70 - VisRes.ConsoleApp.BenchmarkDotNetTests\VisRes.ConsoleApp.BenchmarkDotNetTests.csproj", "{6B16F8BA-30A5-42DA-90CE-5A6AA9FB564D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F22D2CFA-A866-4899-8B46-7E715715605A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F22D2CFA-A866-4899-8B46-7E715715605A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F22D2CFA-A866-4899-8B46-7E715715605A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F22D2CFA-A866-4899-8B46-7E715715605A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52D3381E-CA51-4342-98A2-1A4748E886C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52D3381E-CA51-4342-98A2-1A4748E886C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52D3381E-CA51-4342-98A2-1A4748E886C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52D3381E-CA51-4342-98A2-1A4748E886C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5404C7F4-EFA4-4BF7-A3BC-EC336D8C7AE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5404C7F4-EFA4-4BF7-A3BC-EC336D8C7AE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5404C7F4-EFA4-4BF7-A3BC-EC336D8C7AE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5404C7F4-EFA4-4BF7-A3BC-EC336D8C7AE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C65A80DE-7E81-4C8D-BAC6-631C1D54CFC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C65A80DE-7E81-4C8D-BAC6-631C1D54CFC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C65A80DE-7E81-4C8D-BAC6-631C1D54CFC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C65A80DE-7E81-4C8D-BAC6-631C1D54CFC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB2A6561-B0BB-4437-A1C8-897E6989A1AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB2A6561-B0BB-4437-A1C8-897E6989A1AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB2A6561-B0BB-4437-A1C8-897E6989A1AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB2A6561-B0BB-4437-A1C8-897E6989A1AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2B854F0-C9AE-4E72-9073-58115AA571D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2B854F0-C9AE-4E72-9073-58115AA571D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2B854F0-C9AE-4E72-9073-58115AA571D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2B854F0-C9AE-4E72-9073-58115AA571D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B64B8A63-491F-4340-BAA6-B9AAED22D39F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B64B8A63-491F-4340-BAA6-B9AAED22D39F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B64B8A63-491F-4340-BAA6-B9AAED22D39F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B64B8A63-491F-4340-BAA6-B9AAED22D39F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5CE0537-F18C-4673-A9E2-B4D74DA46D3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5CE0537-F18C-4673-A9E2-B4D74DA46D3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5CE0537-F18C-4673-A9E2-B4D74DA46D3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5CE0537-F18C-4673-A9E2-B4D74DA46D3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B16F8BA-30A5-42DA-90CE-5A6AA9FB564D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B16F8BA-30A5-42DA-90CE-5A6AA9FB564D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B16F8BA-30A5-42DA-90CE-5A6AA9FB564D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B16F8BA-30A5-42DA-90CE-5A6AA9FB564D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1BD0A358-DA6A-47C5-BEB2-8DD9A1D96D67} = {41BECD44-B297-41AD-926F-F3B28C86C644}
+		{3886B150-53F1-4856-907C-6BD0F8CB18C6} = {BE698916-7E0C-40E4-8E02-3CC8E40A3648}
+		{D01B7576-D764-4578-8A40-E4C1188F4D8A} = {BE698916-7E0C-40E4-8E02-3CC8E40A3648}
+		{F22D2CFA-A866-4899-8B46-7E715715605A} = {D4F26361-B61D-4259-8583-73D4922913F9}
+		{52D3381E-CA51-4342-98A2-1A4748E886C6} = {08354363-5476-437C-ABCA-CF3796181112}
+		{5404C7F4-EFA4-4BF7-A3BC-EC336D8C7AE7} = {5C5C4BAA-5574-402D-9C36-671C2798DC84}
+		{C65A80DE-7E81-4C8D-BAC6-631C1D54CFC6} = {5C5C4BAA-5574-402D-9C36-671C2798DC84}
+		{FB2A6561-B0BB-4437-A1C8-897E6989A1AF} = {F334F22D-856D-4605-AE01-76A503896948}
+		{C2B854F0-C9AE-4E72-9073-58115AA571D0} = {000BF866-AFB6-419E-A932-D7B9F9E512DA}
+		{B64B8A63-491F-4340-BAA6-B9AAED22D39F} = {D01B7576-D764-4578-8A40-E4C1188F4D8A}
+		{F5CE0537-F18C-4673-A9E2-B4D74DA46D3E} = {1BD0A358-DA6A-47C5-BEB2-8DD9A1D96D67}
+		{6B16F8BA-30A5-42DA-90CE-5A6AA9FB564D} = {3886B150-53F1-4856-907C-6BD0F8CB18C6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {367FC031-4325-48C3-991D-18CA835449AC}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 10
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs.vspl.net:8080/tfs/visapps
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = 70\u0020-\u0020VisRes.Test.XUnit\\VisRes.Test.XUnit.csproj
+		SccProjectTopLevelParentUniqueName1 = VisRes2\u0020-\u0020Backend.sln
+		SccProjectName1 = 70\u0020-\u0020VisRes.Test.XUnit
+		SccLocalPath1 = 70\u0020-\u0020VisRes.Test.XUnit
+		SccProjectUniqueName2 = 10\u0020-\u0020VisRes.Models\\VisRes.Models.csproj
+		SccProjectTopLevelParentUniqueName2 = VisRes2\u0020-\u0020Backend.sln
+		SccProjectName2 = 10\u0020-\u0020VisRes.Models
+		SccLocalPath2 = 10\u0020-\u0020VisRes.Models
+		SccProjectUniqueName3 = 20\u0020-\u0020VisRes.Core.Infrastructure\\VisRes.Core.Infrastructure.csproj
+		SccProjectTopLevelParentUniqueName3 = VisRes2\u0020-\u0020Backend.sln
+		SccProjectName3 = 20\u0020-\u0020VisRes.Core.Infrastructure
+		SccLocalPath3 = 20\u0020-\u0020VisRes.Core.Infrastructure
+		SccProjectUniqueName4 = 30\u0020-\u0020VisRes.Data.DapperCore\\VisRes.Data.DapperCore.csproj
+		SccProjectTopLevelParentUniqueName4 = VisRes2\u0020-\u0020Backend.sln
+		SccProjectName4 = 30\u0020-\u0020VisRes.Data.DapperCore
+		SccLocalPath4 = 30\u0020-\u0020VisRes.Data.DapperCore
+		SccProjectUniqueName5 = 30\u0020-\u0020VisRes.Data.EFCore\\VisRes.Data.EFCore.csproj
+		SccProjectTopLevelParentUniqueName5 = VisRes2\u0020-\u0020Backend.sln
+		SccProjectName5 = 30\u0020-\u0020VisRes.Data.EFCore
+		SccLocalPath5 = 30\u0020-\u0020VisRes.Data.EFCore
+		SccProjectUniqueName6 = 40\u0020-\u0020VisRes.Data.Repositories\\VisRes.Data.Repositories.csproj
+		SccProjectTopLevelParentUniqueName6 = VisRes2\u0020-\u0020Backend.sln
+		SccProjectName6 = 40\u0020-\u0020VisRes.Data.Repositories
+		SccLocalPath6 = 40\u0020-\u0020VisRes.Data.Repositories
+		SccProjectUniqueName7 = 50\u0020-\u0020VisRes.Business.Services\\VisRes.Business.Services.csproj
+		SccProjectTopLevelParentUniqueName7 = VisRes2\u0020-\u0020Backend.sln
+		SccProjectName7 = 50\u0020-\u0020VisRes.Business.Services
+		SccLocalPath7 = 50\u0020-\u0020VisRes.Business.Services
+		SccProjectUniqueName8 = 60\u0020-\u0020VisRes.Service.Api\\VisRes.Service.Api.csproj
+		SccProjectTopLevelParentUniqueName8 = VisRes2\u0020-\u0020Backend.sln
+		SccProjectName8 = 60\u0020-\u0020VisRes.Service.Api
+		SccLocalPath8 = 60\u0020-\u0020VisRes.Service.Api
+		SccProjectUniqueName9 = _SupportProjects\\70\u0020-\u0020VisRes.ConsoleApp.BenchmarkDotNetTests\\VisRes.ConsoleApp.BenchmarkDotNetTests.csproj
+		SccProjectTopLevelParentUniqueName9 = VisRes2\u0020-\u0020Backend.sln
+		SccProjectName9 = _SupportProjects/70\u0020-\u0020VisRes.ConsoleApp.BenchmarkDotNetTests
+		SccLocalPath9 = _SupportProjects\\70\u0020-\u0020VisRes.ConsoleApp.BenchmarkDotNetTests
+	EndGlobalSection
+EndGlobal

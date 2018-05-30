@@ -1,0 +1,59 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="SQL Server\UserService.cs" />
+    <Compile Remove="Test\AddNumbers.cs" />
+    <Compile Remove="Test\PrimeService_IsPrimeShould.cs" />
+    <Compile Remove="Test\TestsFixtures.cs" />
+    <Compile Remove="Test\Theory.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="appsettings.Development.json" />
+    <None Remove="appsettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.Development.json">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="appsettings.json">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.7.0" />
+    <PackageReference Include="xunit" Version="2.3.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
+    <DotNetCliToolReference Include="dotnet-xunit" Version="2.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="SQL Server\" />
+    <Folder Include="Test\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\10 - VisRes.Models\VisRes.Models.csproj" />
+    <ProjectReference Include="..\20 - VisRes.Core.Infrastructure\VisRes.Core.Infrastructure.csproj" />
+    <ProjectReference Include="..\30 - VisRes.Data.EFCore\VisRes.Data.EFCore.csproj" />
+    <ProjectReference Include="..\40 - VisRes.Data.Repositories\VisRes.Data.Repositories.csproj" />
+    <ProjectReference Include="..\50 - VisRes.Business.Services\VisRes.Business.Services.csproj" />
+    <ProjectReference Include="..\60 - VisRes.Service.Api\VisRes.Service.Api.csproj" />
+  </ItemGroup>
+
+</Project>

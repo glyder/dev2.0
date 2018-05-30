@@ -1,0 +1,17 @@
+az
+
+#ls <tab>
+
+docker-compose -f docker-compose.debug.yml up -d --build
+
+# show the images
+docker images
+
+# browse to it and debug it
+open http://localhost:4222
+
+# build and push the production docker image to the Azure CR
+docker-compose up -d build
+docker push papacontainerregister.azurecr.io/johnpapa/angular-cosmosdb
+
+

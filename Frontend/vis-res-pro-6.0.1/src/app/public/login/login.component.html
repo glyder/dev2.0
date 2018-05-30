@@ -1,0 +1,56 @@
+﻿<div class="col-md-6 col-md-offset-3" *ngIf="!isAuthenticated">
+    <h2>Login</h2>
+    <form name="form" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
+        <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !username.valid }">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" name="username" [(ngModel)]="model.username" #username="ngModel" required />
+            <div *ngIf="f.submitted && !username.valid" class="help-block">Username is required</div>
+        </div>
+        <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !password.valid }">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" name="password" [(ngModel)]="model.password" #password="ngModel" required />
+            <div *ngIf="f.submitted && !password.valid" class="help-block">Password is required</div>
+        </div>
+        <div class="form-group">
+            <button [disabled]="loading" class="btn btn-primary">Login</button>
+            <img *ngIf="loading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA=="
+            />
+            <!-- <a [routerLink]="['/register']" class="btn btn-link">Register</a> -->
+        </div>
+    </form>
+</div>
+
+<div class="col-md-6 col-md-offset-3" *ngIf="isAuthenticated">
+    <h2>Terms & Conditions</h2>
+    <h4 class="modal-title text-red">
+        <i class="fa fa-lock icon-west"></i>SECURITY OF INFORMATION
+    </h4>
+    
+    <h4>By logging into VisRes I acknowledge that:</h4>
+    <ul>
+        <li>I have read and understood Visionstream's PRIVACY POLICY and CODE OF CONDUCT and agree that I will be bound by the provisions of these policies;</li>
+        <li>I will have access to company and private information which may be of a confidential nature;</li>
+        <li>This information will only be used by me in the course of the work I am required to undertake; and I understand that;</li>
+        <li><strong class="text-red">Any disclosure of this information to unauthorized parties under any circumstances constitutes a serious breach of my terms of employment by Visionstream and will result in disciplinary action being taken against me.</strong></li>
+    </ul>  
+            
+    <div class="checkbox m-r-xs">
+        <input type="checkbox" [checked]="isAccepted" (change)="isAccepted = !isAccepted" id="terms" />
+        <label for="terms">I accept these Terms and Conditions</label>
+    </div>
+
+    <div class="col-md-4">
+        <button type="button" class="btn btn-danger pull-left" 
+                (click)="logout()">
+                <i class="fa fa-external-link icon-west"></i>Logout
+        </button>
+    </div>
+
+    <div calss="col-md-4 col-md-offset-8" *ngIf="isAccepted" style="opacity:1">
+        <button type="button" class="btn btn-primary green" 
+                (click)="continue()">
+                Continue<i class="fa fa-arrow-circle-right icon-east"></i>
+        </button>
+    </div>
+
+</div>

@@ -1,0 +1,13 @@
+<p class='light-green darken-1 white-text'>
+    button works!
+</p>
+<button class="btn btn-success {{btnCss}}" [ngClass]="{'disabled': !complete}" (click)="buttonClick()" data-toggle="button" mdbRippleRadius>
+
+  <i class="fa {{icon}} icon-west"
+     [ngClass]="{'icon-spin-fast': !complete}"></i>
+  {{label}}
+
+ </button>
+
+
+<!-- <button class="btn btn-success waves-light" mdbRippleRadius>Login</button> -->

@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [VisResWeb]
+    WITH PASSWORD = N'DqczpaBqqmf+ovyms}zwrim{msFT7_&#$!~<heMsnbbWikxR', SID = 0x53E758B223D8474F91497D9DCFAE71B1, DEFAULT_DATABASE = [VisRes2], DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
+

@@ -1,0 +1,14 @@
+﻿
+https://docs.microsoft.com/en-us/ef/core/what-is-new/ef-core-2.1#query-types
+
+=========================================
+While I wait for EF Core 2.1 I've ended up adding a fake key to my model
+
+[Key]
+public Guid Id { get; set; }
+	and then returning a fake Guid from SQL.
+
+var sql = $"select newid(), name [result] from names";
+
+=========================================
+

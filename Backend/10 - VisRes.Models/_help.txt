@@ -1,0 +1,121 @@
+﻿
+
+Install-Package Microsoft.EntityFrameworkCore.SqlServer
+Install-Package Microsoft.EntityFrameworkCore.Tools
+Install-Package Microsoft.EntityFrameworkCore.SqlServer.Design
+
+Install-Package Microsoft.EntityFrameworkCore 
+Install-Package Microsoft.EntityFrameworkCore.Tools.DotNet
+Install-Package Microsoft.EntityFrameworkCore.Design 
+
+==============
+
+OR PREFERED use
+
+EF Core Power Tools
+	https://marketplace.visualstudio.com/items?itemName=ErikEJ.EFCorePowerTools
+
+Reverse POCO Generated with 
+	-> EF Core Power Tools 
+		-> Reverse Engineer
+
+(Right click project Vrs.Models)
+
+	Context name
+		VrsContext
+
+	Namespace
+		Vrs.Models
+
+	Project Path
+		EF
+
+	Naming
+		NO - DO NOT pluralize
+		YES - Use table
+		No - Replace Id with ID
+		Yes - Use DataAnnotation
+
+
+	Move         EF => Vrs.Models.EF.Models				(the ones you convert hide or delete afterwards)
+	Move VrsContext => Vrs.Data.EFCore.VrsContext		(hide or delete afterwards)
+					   *********
+
+===================================================
+
+
+Scaffold-DbContext "Data Source=VS28MVAPPSQL1-t;Initial Catalog=VisResTwo;Integrated Security=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+Scaffold-DbContext "Data Source=TST-VM-VRSQL1;Initial Catalog=VisRes2;Integrated Security=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+====
+
+
+	https://stackoverflow.com/questions/11851207/prevent-property-from-being-serialized-in-web-api
+	Web API doc for JSON and XML Serialization to explicitly prevent serialization on a property you can either use 
+
+	[JsonIgnore] for the Json serializer or 
+	[IgnoreDataMember] for the default XML serializer.
+	OR
+	use --> [DataContract] [DataMember]
+
+
+
+		1 out of 3 way	** PREFER - JSON.NET OptIn
+		===============
+			https://stackoverflow.com/questions/45045546/json-net-serializes-empty-json?noredirect=1&lq=1
+			using Newtonsoft.Json;
+
+			[JsonObject(MemberSerialization.OptIn)]
+			public partial class TblDivision
+			{
+				[JsonProperty]							//Insert
+				public string Name { get; set; }
+
+				[JsonProperty]							//Insert
+				public string Description { get; set; }
+
+				[Column("BrandingID")]					
+				public int? BrandingID { get; set; }
+
+				[Column("OperationalStatusID")]
+
+		2 out of 3 way	- JsonIgnore - OptOut
+		================
+
+			public partial class TblLob 
+			{
+				public int Lobid { get; set; }
+				public string Lob { get; set; }
+
+				[JsonIgnore]
+				public DateTime FromDate { get; set; }
+
+				[JsonIgnore]
+				public string EditedBy { get; set; }
+			}
+
+		3 out of 3 way  - [IgnoreDataMember]
+		===============
+
+			[Table("tblOperationalStatuses")]
+			public partial class TblOperationalStatus
+			{
+				public int OperationalStatusID { get; set; }
+				public string Status { get; set; }
+
+				[IgnoreDataMember]								//Insert
+				public ICollection<TblAccreditationLicencing> TblAccreditationLicencings { get; set; }
+
+				[IgnoreDataMember]								//Insert
+				public ICollection<TblAddress> TblAddresses { get; set; }
+
+
+
+
+
+===
+
+	MetaData
+	https://stackoverflow.com/questions/34576921/asp-net-core-metadatatype-attribute-not-working?noredirect=1&lq=1
+
+

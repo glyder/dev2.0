@@ -1,0 +1,12 @@
+﻿<div *ngIf="message" [ngClass]="{ 'alert': message, 'alert-success': message.type === 'success', 'alert-danger': message.type === 'error' }" role="alert">
+    {{message.text}}
+</div>
+<!-- <div class="alert alert-primary" role="alert">
+    This is a primary alert—check it out!
+</div>
+<div class="alert alert-success" role="alert">
+    This is a primary alert—check it out!
+</div>
+<div class="alert alert-danger" role="alert">
+    This is a primary alert—check it out!
+</div> -->
